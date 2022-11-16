@@ -1,0 +1,200 @@
+@import "stylesheet-5.css";
+
+/* USED FOR MAJOR title and headers like COINDCX , Mentoring session
+
+to make the code consistent with lesser changes
+*/
+.block-title {
+  font-size: var(--font-size-xl);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.block-header {
+  font-size: var(--font-size-xxl);
+}
+
+/* classes from prev stylesheet - for the Venue - "IN PERSON" */
+.view-programs .program-location {
+  position: relative;
+  color: var(--color-text);
+  text-align: center;
+  font-weight: lighter;
+}
+
+.program-location {
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+}
+
+/* in the component date */
+.small-txt {
+  font-size: var(--font-size-s);
+  line-height: var(--border-radius-l);
+  text-align: center;
+  position: relative;
+  margin: 2px;
+  top: -15px;
+}
+
+/* text in regular size as an "Winning Upto  */
+.regular-text {
+  font-size: var(--font-size-m);
+  color: var(--color-text);
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* for the numbers like $250000 */
+.numbers {
+  font-size: var(--font-size-large-heading);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* the coindcx image css */
+.coindcx-img {
+  display: block;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 58%;
+}
+
+/* calendar icon css */
+
+.icon {
+  margin: 4px;
+}
+
+
+/* mobile css */
+@media screen and (max-width: 720px) {
+  .space- {
+    margin: 18px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  /* lorem ipsum */
+  .basic-text {
+    font-size: var(--font-size-xs);
+    text-align: justify;
+    font-weight: lighter;
+  }
+
+
+  .small-txt {
+    font-size: var(--font-size-s);
+    line-height: var(--border-radius-l);
+    text-align: center;
+    position: relative;
+    margin: 2px;
+    top: -15px;
+  }
+
+
+  .small-txt i {
+    padding: 5px;
+  }
+
+  /* for the button "APPLY NOW*/
+  .coming-soon {
+    margin: 0.5px;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  /* for the grid */
+  .row {
+    top: 20px;
+    position: relative;
+    margin: 2px;
+  }
+
+  /* mentors image distribution */
+  .parent-container-flex .view-content {
+    justify-content: center;
+    justify-items: center;
+    margin: 2px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* title and heading */
+  .block-title {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  /* specifically for COINDCX */
+  .coin {
+    font-size: 50px;
+  }
+
+  .block-header {
+    font-size: 40px;
+  }
+
+  .small-txt {
+    font-size: 18px;
+  }
+
+  /* lorem ipsum & FAQS*/
+  .basic-text {
+    font-size: 18px;
+    text-align: justify;
+    font-weight: lighter;
+  }
+
+  .line {
+    height: 40rem;
+    border-right: 1px solid #000900;
+    position: absolute;
+    right: 50%;
+  }
+
+  /* "Winners , opacity: 0.5 text */
+  .pitch-txt {
+    padding: 10px;
+    height: 40rem;
+    width: 120rem;
+  }
+
+  /* regular text in the grid  */
+  .regular-text {
+    margin-top: 40px;
+    display: block;
+  }
+
+  /* $1MM */
+  .numbers {
+    position: relative;
+    top: 20px;
+  }
+
+  /* mentors pictures distribution and css */
+  .parent-container-flex .view-content {
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1032px) and (min-width:738px) {
+  .line{
+    height: 40rem;
+      border-right: 1px solid #000900;
+      position: absolute;
+      right: 50%;
+  }
+
+    .pitch-txt {
+      padding: 10px;
+      height: 40rem;
+      width: 79rem;
+    }
+}
